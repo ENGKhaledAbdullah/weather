@@ -31,6 +31,10 @@ h1{
     text-align: center;
     
 }
+.temp img{
+    width: 300px;
+    height: 300px;
+}
 .day,.weather,.w-cel,.w-fh{
     border-bottom: none;
     color: white;
@@ -76,4 +80,80 @@ hr{
 }
 .box div:first-child::after{
     display: none;
+}
+@media (max-width: 1100px){
+    .box div::after{
+        left: -15px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .w-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .local{
+        width: 100%;
+    }
+    .m-img{
+        width: 250px;
+        height: 250px;
+    }
+    .box div::after{
+        left: 5px;
+    }
+
+    .box{
+        gap: 10px;
+        margin-left: -50px;
+    }
+    .week-weather h2{
+        font-size: 1.4rem;
+    }
+    .local{
+        border-radius: 0;
+    }
+    .box {
+        display: block;
+    }
+    .box img{
+        left: 35%;
+        width: 250px;
+    }
+    .box div::after{
+        display: none;
+    }
+}
+@media (max-width: 767.98px) { 
+    .local{
+        border-radius: 0;
+    }
+    .box img{
+        left: 30%;
+        width: 200px;
+    }
+}
+@media (max-width: 575.98px) { 
+.local >*{
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+.row{
+    width: 400px;
+}
+.m-img{
+    position: relative;
+    left: 75px;
+}
+.wind{
+    margin-left: -30px;
+}
+.local{
+    border-radius: 0;
+}
+.box img{
+    left: 0;
+    width: 150px;
+}
 }
