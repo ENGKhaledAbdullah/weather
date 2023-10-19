@@ -116,6 +116,10 @@ hr{
     .box {
         display: block;
     }
+    .c-box{
+        margin: 0 15px;
+        border-bottom: 1px solid white;
+    }
     .box img{
         left: 35%;
         width: 250px;
